@@ -167,7 +167,7 @@ ${list.map(e=>html`<article class="card" key=${e.n} style=${{marginBottom:"1rem"
 <div class="grid" style=${{gridTemplateColumns:"repeat(auto-fit,minmax(150px,1fr))"}}>${[1,2,3].map(i=>html`<div class="ph" key=${i} role="img" aria-label=${"Photo placeholder "+i+" for "+e.n}>Photo ${i}</div>`)}</div></article>`)}
 ${!list.length&&html`<p>No events match these filters.</p>`}</div></section>`}
 
-function Footer(){return html`<footer><div class="w"><div><b>Leternal Inc</b><p>Leternal Systems and Leternal Academy<br/>www.leternal.ng</p></div><div><b>Contact</b><p><a href="tel:+2348138648116">+234 813 864 8116</a><br/><a href="mailto:info@leternal.ng">info@leternal.ng</a><br/>Address: to be added</p></div><div><b>Follow</b><p>Social links: to be added</p></div></div></footer>`}
+function Footer(){return html`<footer><div class="w"><div><b>Leternal Inc</b><p>Leternal Systems and Leternal Academy<br/>www.leternal.ng</p></div><div><b>Contact</b><p><a href="tel:+2348138648116">+234 813 864 8116</a><br/><a href="mailto:info@leternal.ng">info@leternal.ng</a><br/>Address: A41 Saraha Home Security Estate, Gwarinpa, Abuja</p></div><div><b>Follow</b><p>Social links: @leternalsystems, @leternalacademy</p></div></div></footer>`}
 
 const pages={home:Home,systems:SysHome,"systems-portfolio":Portfolio,"systems-value":Value,"systems-contact":()=>html`<${Contact}/>`,academy:AcHome,"academy-training":Training,"academy-previous":Previous,"academy-contact":()=>html`<${Contact} academy=${true}/>`};
 
